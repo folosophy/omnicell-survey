@@ -1,0 +1,74 @@
+@import 'vars.less';
+
+/********************************************************************
+BASIC FORM (frm)
+********************************************************************/
+
+.field-group {
+	.mb(@m);
+	&.center {.field {.mrl;}}
+}
+.field {.mb(@ms); .w; .mw(50rem);}
+
+input select, .drop-down .menu {
+	.pad(@xs); background-color:transparent; .fw(300);
+	width:100%; border:@dtrans solid; .bw(0 0 2px 0);
+}
+
+textarea {.bc(white); .fw(300); .br(5px);}
+
+#spm {display:none !important;}
+
+button {overflow:hidden;}
+
+.noscrape {.o(0); .fs(0); .abs;}
+
+input:not([type='checkbox']),textarea {.pad(@s); .br(5px); .bd(none); .w; .fs(2.5rem); .fw(300);}
+
+/********************************************************************
+BUTTONS (btn)
+********************************************************************/
+
+a.button, button {
+	.pad(2rem); .bd(none); .ib; .of; .bc(@blue); .c(white); .lh; .fw(400); .br(4px);
+	cursor:pointer; .fs(2.75rem);
+	&.disabled {.o(.5); cursor:not-allowed;}
+}
+
+/********************************************************************
+SIGN UP / SIGN IN (sgn)
+********************************************************************/
+
+.popup {.mnw(45rem); .mw(100%); .pad(@m); .fxdcenter;}
+
+#gateway {.bc(white);}
+
+form.light {
+	input,textarea {.bc(white);}
+}
+
+form {
+	&#new-user {.w(100rem);}
+}
+
+#user-credentials {.hide; .mw(50rem); .mar(0 auto);}
+
+/********************************************************************
+NORMALIZE (nrm)
+********************************************************************/
+
+input:focus {outline-width:0 !important;}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  .c(rgba(0,0,0,.25));
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}

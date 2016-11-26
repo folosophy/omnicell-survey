@@ -1,0 +1,62 @@
+@import "vars.less";
+
+/////////////////////////////////////////////////////////////////////
+// FONTS (fnts)
+/////////////////////////////////////////////////////////////////////
+
+@psize:2.5rem;
+@p-small:1.75rem;
+
+.font1 () {font-family:'proxima-nova', sans-serif; }
+
+body {
+  .font1; color:@dgrey;
+  .ls(.05em); .fw(300); .fs(@psize);
+}
+
+p a {font-size:@s; .fw(400); .lh(1.5em); color:inherit;}
+p.sm {font-size:2.25rem; .fw(300); .lh(150%); margin:0 0 1.5em; color:@mgrey;}
+p {font-size:@s; .fw(300); .lh(1.7em); margin:0 0 1.75em; color:@dgrey;}
+h1 {font-size:3.6rem; .fw(400); .mb(@m); .lh(1.5em); .ls(.02em); .ws(.01em);}
+h2 {.h2; .mb(2.25rem);} .h2() {.fs(2.6rem); .fw(400); .lh(1.5em);}
+h3 {.h3; .mb(2.25rem);} .h3() {.fs(2.5rem); .fw(400); .lh(1.5em);}
+h4 {font-size:1.75rem; .ttf; .fw(400); margin:0 0 2em 0; color:#666; .lh(1.5em); .ls(.07em);}
+
+ol {
+  .fs(@s); .lh(1.5em);
+  > li {.mb(2em);}
+}
+
+a {.c(inherit);}
+p a {color:#666; border-bottom:3px solid; .fw(bold);}
+.halves, .thirds, .fourths {p,button{.fs(@p-small);}}
+button {.fs(@psize);}
+#logo {.font1;}
+
+.text-accent {.c(inherit);}
+
+/////////////////////////////////////////////////////////////////////
+// SPECIAL (spc)
+/////////////////////////////////////////////////////////////////////
+
+h2.case {.fs(@ml); .c(white); .fw(700);}
+
+/////////////////////////////////////////////////////////////////////
+// THEME FONTS (tfnt)
+/////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////
+// COLOR (clr)
+/////////////////////////////////////////////////////////////////////
+
+a,h1,h2,h3,h4,span,p {
+  &.white {.c(white);}
+  &.light {.o(.6); .c(white);}
+}
+
+/////////////////////////////////////////////////////////////////////
+// Quotes (qts)
+/////////////////////////////////////////////////////////////////////
+
+.big-quote {.fs(3rem);}

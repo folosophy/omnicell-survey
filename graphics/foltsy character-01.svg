@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="400px" height="400px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+<circle opacity="0.05" cx="160.375" cy="171.625" r="16.125"/>
+<rect x="144" y="225" fill="#ECCEAC" width="27" height="27"/>
+<circle fill="#ECCEAC" cx="204.333" cy="167.336" r="10"/>
+<circle fill="#ECCEAC" cx="111.333" cy="167.336" r="10"/>
+<rect x="98" y="309" fill="#A0D2F4" width="110" height="103"/>
+<line fill="none" stroke="#ECCEAC" stroke-width="27" stroke-miterlimit="10" x1="97.5" y1="316" x2="97.5" y2="485"/>
+<g>
+	<g>
+		<defs>
+			<path id="XMLID_3_" d="M186,189l20-27v20.667c0,28.05-21.6,51-48,51s-48-22.95-48-51V162l20,27C157.5,166.167,186,189,186,189z"
+				/>
+		</defs>
+		<use xlink:href="#XMLID_3_"  overflow="visible" fill="#755E4C"/>
+		<clipPath id="XMLID_6_">
+			<use xlink:href="#XMLID_3_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<circle fill="#ECCEAC" cx="158.375" cy="169.625" r="16.125"/>
+</g>
+<g>
+	<defs>
+		<path id="XMLID_1_" d="M84,318c0-41.053,33.28-74.333,74.333-74.333c41.053,0,74.333,33.28,74.333,74.333"/>
+	</defs>
+	<use xlink:href="#XMLID_1_"  overflow="visible" fill="#A0D2F4"/>
+	<clipPath id="XMLID_7_">
+		<use xlink:href="#XMLID_1_"  overflow="visible"/>
+	</clipPath>
+	<ellipse clip-path="url(#XMLID_7_)" fill="#ECCEAC" cx="158.431" cy="236.75" rx="30.431" ry="27.25"/>
+</g>
+<g>
+	<circle fill="#666666" cx="133.667" cy="151.669" r="4"/>
+	<circle fill="#666666" cx="182.667" cy="151.669" r="4"/>
+</g>
+<path fill="#ECCEAC" d="M175.778,200.813c0,7.283-7.785,13.187-17.389,13.187S141,208.096,141,200.813"/>
+</svg>

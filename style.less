@@ -1,0 +1,132 @@
+/* Theme Name: Survey */
+
+@import 'less/vars.less';
+
+/********************************************************************
+HTML (html)
+********************************************************************/
+
+html {font-size:10px;}
+html, body {margin:0; .wh;}
+
+body {
+  .fs(2rem); .of; .bc(@lgrey);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#mobile, #tablet, #desktop {display:none;}
+
+div,section, button {position:relative;}
+
+#wpadminbar {.hide;}
+
+/********************************************************************
+STYLES (stl)
+********************************************************************/
+
+@import 'less/styles.less';
+
+/********************************************************************
+MAIN PAGE (mnp)
+********************************************************************/
+
+@import 'less/main.less';
+
+/********************************************************************
+FONTS (fnt)
+********************************************************************/
+
+@import "less/fonts.less";
+
+/********************************************************************
+FORMS (frm)
+********************************************************************/
+
+@import "less/forms.less";
+
+/********************************************************************
+ICONS (icn)
+********************************************************************/
+
+@import "less/icons.less";
+
+/********************************************************************
+IMAGES (imgs)
+********************************************************************/
+
+@import "less/images.less";
+
+/********************************************************************
+ARROWS (arw)
+********************************************************************/
+
+.arrow {
+    width:10rem; height:10rem; .bc(transparent); .abs;
+    border:solid white; border-width:0 5px 5px 0; top:30%;
+    transform:translate(-50%,-50%) rotate(45deg); left:50%;
+}
+
+.arrow.hov {animation:arrow-hover 1.5s ease-in-out infinite;}
+
+/********************************************************************
+ANIMATIONS (anm)
+********************************************************************/
+
+@import 'less/animation.less';
+
+@keyframes arrow-hover {
+    0% {transform:translate(-50%,-50%) rotate(45deg);}
+    50% {transform:translate(-50%,-60%) rotate(45deg);}
+    100% {transform:translate(-50%,-50%) rotate(45deg);}
+}
+
+/* Gears */
+
+.gears {
+    .bc; height:16rem; .abs; top:100%; left:50%; .trtr; .ib;
+    .flx; align-items:center; overflow:visible; .mw(125%);
+
+    img {
+        margin:0 1rem;
+        &:nth-child(5) {height:200%; left:100%; animation:gear-spin 10s linear infinite;}
+        &:nth-child(4) {height:140%;  left:75%; animation:gear-spin 10s linear reverse infinite;}
+        &:nth-child(3) {height:90%;  left:50%; animation:gear-spin 10s linear infinite;}
+        &:nth-child(2) {height:60%;  left:25%; animation:gear-spin 10s linear reverse infinite;}
+        &:nth-child(1) {height:40%;  left:0%; animation:gear-spin 10s linear forwards infinite;}
+    }
+    @keyframes gear-spin {from {transform:rotate(0deg);} to {transform:rotate(360deg);}}
+}
+
+/********************************************************************
+DIVIDERS (dvd)
+********************************************************************/
+
+.pad {
+    &.l {.w; .h(@xl); .bc;}
+}
+
+
+
+/********************************************************************
+LAYOUT (lyt)
+********************************************************************/
+
+@import "less/layout.less";
+
+/********************************************************************
+RESPONSIVE (rsp)
+********************************************************************/
+
+@import "less/responsive/responsive.less";
+
+/********************************************************************
+Debugging (dbg)
+********************************************************************/
+
+#dev {.fxd; bottom:0; right:0; .bc(white); .z(99999); padding:4rem; display:none;}

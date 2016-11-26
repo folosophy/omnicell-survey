@@ -1,0 +1,75 @@
+@import "vars.less";
+
+/////////////////////////////////////////////////////////////////////
+// IMAGES (img)
+/////////////////////////////////////////////////////////////////////
+
+.last {margin-bottom:0;}
+
+.ib {display:inline-block;}
+.center {text-align:center;}
+.boxed {width:100%; max-width:1400px; margin:0 auto; .pad(@l);}
+.dist {.dist; h1,h2,h3,h4 {.mb;}}
+.dist-top {.flx; align-items:top; .jcsb;}
+.ib-cont { > div {.ib; .va;}}
+.aic {.aic;}
+.square {.w(100%); .pt(100%); .bc(transparent);}
+
+.ldist {
+  .flx; .jc(flex-start); .aic;
+  p,h1,h2,h3,h4 {.mb; .ml(@s);}
+}
+
+.grid {
+  .fs; .w(calc(100% ~'+' @m)); .ls; .mar(-@m / 2);
+}
+
+.half {.w(calc(~'50%' - @m)); .ib; .va(top); .mar(@m / 2);}
+.third {.w(calc(~'33.3333%' - @m)); .ib; .va(top); .mar(@m / 2);}
+.two-third {.w(calc(~'66.6666%' - @m)); .ib; .va(top); .mar(@m / 2);}
+.fourth {.w(calc(~'25%' - @m)); .ib; .va(top); .mar(@m / 2);}
+
+.three-fourths {
+  > .large {width:75%;}
+}
+
+/////////////////////////////////////////////////////////////////////
+// TABLES (tbl)
+/////////////////////////////////////////////////////////////////////
+
+td,tr {
+  &.top {.va(top);}
+}
+
+/////////////////////////////////////////////////////////////////////
+// DIVIDERS (dvd)
+/////////////////////////////////////////////////////////////////////
+
+.dvd {.h(2px); .w; .bc(@dtrans); .mb(@ms);}
+
+.dvd.dot {
+    height:1px; width:100%; .bc(@lgrey); .b-b(@style:dotted); .bc(transparent);
+    .mb(@ml-pad);
+}
+
+.dvd.h {
+    .bc(@lgrey); .mar(0 auto @m); @size:5px; .wh(@size);
+}
+
+.spacer {
+  .w; .h(1px);
+  &.m {.mb(@m);}
+  &.s {.mb(@ms);}
+}
+
+/////////////////////////////////////////////////////////////////////
+// SECTIONS (sct)
+/////////////////////////////////////////////////////////////////////
+
+section .wrap {
+    .boxed;
+}
+
+section {
+  &.pad {.pad(@m);}
+}

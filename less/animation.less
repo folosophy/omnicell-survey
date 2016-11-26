@@ -1,0 +1,45 @@
+/////////////////////////////////////////////////////////////////////
+// ANIMATION (anm)
+/////////////////////////////////////////////////////////////////////
+
+@import 'vars.less';
+
+.reveal {
+  .o(0);
+}
+
+.slide-in {.mt(0); .o;}
+
+.float {animation:float 2s @eio infinite;}
+
+@keyframes float {
+  0% {.trf(translate3d(0,-@xs,0));}
+  50% {.trf(translate3d(0,@xs,0));}
+  100% {.trf(translate3d(0,-@xs,0));}
+}
+
+/////////////////////////////////////////////////////////////////////
+// Shudders (shd)
+/////////////////////////////////////////////////////////////////////
+
+.shake {animation:shake .5s linear;}
+
+@keyframes shake {
+  0% {.trf(translate3d(-2rem,0,0));}
+  20% {.trf(translate3d(1.5rem,0,0));}
+  40% {.trf(translate3d(-1.1rem,0,0));}
+  60% {.trf(translate3d(.75rem,0,0));}
+  80% {.trf(translate3d(-.25rem,0,0));}
+  100% {.trf(translate3d(0,0,0));}
+}
+
+/////////////////////////////////////////////////////////////////////
+// SPINS (spn)
+/////////////////////////////////////////////////////////////////////
+
+.slowSpin() {animation:slowSpin .5s linear infinite;}
+
+@keyframes slowSpin {
+  from {.trf(rotate(0deg));}
+  to {.trf(rotate(360deg));}
+}

@@ -1,0 +1,262 @@
+@import "vars.less";
+
+/////////////////////////////////////////////////////////////////////
+// MAIN PAGE (mnp)
+/////////////////////////////////////////////////////////////////////
+
+table {
+  &.fullx {.w;}
+  &.full {.wh;}
+}
+
+#page {.wh;}
+
+#menu-container {
+  .w(50rem); .h; .bc(@dgrey); .ib; .va(top); .abs; .l; .t;
+}
+
+#facilities-section {.w(calc(100% ~'-' 50rem)); .ib; .va(top); .h; .of; .abs; .l(50rem); .t;}
+
+#menu {.wh;}
+
+#menu-header {
+  .w; .h(@ml); .bc(@black); .lh(@ml); .c(white); .fw(700); .ttf;
+  .data {.pb(0);}
+}
+
+.module-med {.pad(@ms);}
+
+#nav {
+  .bc(white); .h(@ml); .dist; .c(@mgrey); .h(7rem);
+}
+
+#user-info {.fw(300); .mr(@ml); .c(black);}
+
+.module {
+  &.lg {.pad(@ml);}
+}
+
+.legend {.h(18%);}
+
+.legend-swatch {.w(7rem); .h(4rem); .mb(@xs);}
+
+.legend-key {.pad(0 2.5px);}
+
+.table-row {.bd(solid @lgrey); .bw(0 0 10px);}
+
+div.pad {.pad(0 @ms);}
+
+/////////////////////////////////////////////////////////////////////
+// MEDICATIONS PAGE (mdc)
+/////////////////////////////////////////////////////////////////////
+
+.medication-module {.vis(hidden);}
+
+#page {
+  &.medication {
+    #facilities-section {.w; .l;}
+    #menu-container, #facility-charts, .facility-module {.hide;}
+    .medication-module {.vis(visible);}
+  }
+}
+
+#chart-back {.bc(@blue); .lh(7rem); .iflex; .aic; .c(white); .cur(pointer);}
+#chart-back-arrow {.h(2rem); .mr(1rem);}
+#save {.bc(@black); .lh(7rem); .iflex; .aic; .c(white); .cur(pointer);}
+#save-icon {.wh(3rem); .ib; .mr(@xs);}
+
+#save-text {
+
+}
+
+#chart-back, #save {h3 {.c(white); .lh(7rem); .mar(0); .ib; .fw(300);} .pad(0 @ms); }
+
+#medication-nav {.fs(0); .ls(0); .flx; }
+
+#medication-charts {.h(65%); .w; .bc; .abs; .b; .mar(@m 0);}
+
+
+#medication-headers {
+  .h(10%); .w; .bc; .w(calc(100% ~'-' (@m * 2))); .mar(0 @m);
+  .fxd; .t(25%); .l;
+}
+
+.med-capabilities.data {
+  .w(calc(55% ~'-' 50rem)); .ta(center); .pad(@xs @s @xs @m); .iflex; .aic;
+  h3 {.fw(400); .fs(2.2rem); .lh(120%); .w; .ta; .w; .ta; .mar(0 0 0 @m);}
+  h2 {.ta; .w;}
+}
+.med-savings {.w(50rem);}
+.med-values {.w(30%);}
+.comments {.w(25%); .h;}
+.comment {.w; .br(5px); .bd(none); .pad(1.5rem); .fs(1.75rem); .ofy(scroll); .ofx(hidden);}
+
+.med-labels-container {.va(bottom);}
+.med-labels {.dist; .h(3rem); .bc; > div {flex-grow:1;}.abs; .w; .b;}
+.med-stem {.h(2rem); .w(2px); .bc(@mgrey); .rel; .abcenter;}
+.med-label {.abs; .b(@xs); .whs; .trf(rotate(-45deg)); .to(left); .l(50%);}
+.cost-module {.ta;}
+
+.data-row {
+  .hide;
+  &.saved {.flx;}
+}
+.data {.pad(@xs); .ib; .mar(10px 5px);}
+
+.reduction-types {.dist;}
+
+.med-value {.w(calc(100% ~'-' 5px)); .h; .mar(0 2.5px);}
+.data {&.med-values, &.comments {.pad(0);}}
+
+#med-chart tbody {
+  td {.h;}
+}
+
+#med-header {.w; .fxd; .l; .t(29%); .z(1); .bc(@lgrey); .flx;}
+
+#med-chart {.wh;}
+
+#med-chart-wrapper { .w; .h(60%); .abs; .b; .l; .ofy(scroll);}
+
+/////////////////////////////////////////////////////////////////////
+// SCROLL BARS (scb)
+/////////////////////////////////////////////////////////////////////
+
+#menu-items, #facility-chart, #medication-charts, #med-chart-wrapper {
+  &::-webkit-scrollbar{width: 1.5rem;}
+  &::-webkit-scrollbar-thumb{.bc(lighten(@mgrey,30%));}
+  &::-webkit-scrollbar-thumb:hover{.bc(lighten(@mgrey,50%));}
+  &::-webkit-scrollbar-track{.bc(lighten(@mgrey,10%));}
+}
+
+
+/////////////////////////////////////////////////////////////////////
+// MENU (mnu)
+/////////////////////////////////////////////////////////////////////
+
+#menu-items {.h(calc(100% ~'-' (60rem))); .ofy(scroll);}
+
+.menu-item {
+  .pad(@ms); .o(.35); cursor:pointer;
+  &:hover {.o(.5);}
+  &.selected {
+    .o; .bc(@mtrans);
+    .menu-item-save {.bc(@blue); .c(white);}
+  }
+  &.saved {
+    .menu-item-save {
+      .c(transparent); .bc;
+      &:after {
+        .abs; .l(50%); .t(50%); transform:translate(-50%,-50%) rotate(45deg);
+        .cnt; .cnt; .bc(white); .w(2px); .h(@ms);
+      }
+      &:before {
+        .abs; .l(50%); .t(50%); transform:translate(-50%,-50%) rotate(-45deg);
+        .cnt; .bc(white); .w(2px); .h(@ms);
+      }
+    }
+  }
+}
+.menu-item-title { .c(white); .fs(2rem); .fw(400);}
+
+.menu-item-save {
+  .bc; .c(transparent); .lh(0); .br(3px); .pad(@xs); .fs(2rem);
+}
+
+#view-saved {
+  .h(7rem); .bc(@blue); .pad(0 @ms); .trn(opacity .5s linear); .o(0); cursor:default;
+
+  h3 {.mb; .lh(7rem);}
+  &.counting {.o; cursor:pointer;}
+}
+
+/////////////////////////////////////////////////////////////////////
+// COST REDUCTION (crd)
+/////////////////////////////////////////////////////////////////////
+
+#menu-container {
+  .cost-reduction {
+    .hide;
+    &.selected {.dsp(block);}
+  }
+}
+
+#menu-reductions {.dist; h4 {.pb(@xs);}}
+#menu-reduction {.w; .bc(@mmgrey); .abs; .l; .b; .z(1); .h(33%);}
+
+.cost-icon {.mb(@xs); .wh(5rem);}
+
+.bar-graph {
+   .fs(0);
+  > div:first-child {
+    > div:nth-child(4) {&:after {.cnt('MAN'); .abcenter; .c(white); .fs(1.2rem); .fw(400);}}
+  }
+  > div:nth-child(2) {
+    > div:nth-child(4) {&:after {.cnt('AUTO'); .abcenter; .c(white); .fs(1.2rem); .fw(400);}}
+  }
+}
+
+.graph {.w(5.5rem); .h(14rem); .bc(@ltrans); .ib;}
+
+.graph-val {
+  .w; .h(25%); .bc(@blue); .bd(@mgrey 2px solid); .rel;
+  &.none {.bc(transparent);}
+}
+#med-chart {
+  .graph-val {.bc(@blue); .bd(2px solid #dadada); &.none {.bc(rgba(0,0,0,.1));}}
+}
+
+.remove-icon {
+  .bc; .wh(@s); .cur;
+  &:after {
+    .abs; .l(50%); .t(50%); transform:translate(-50%,-50%) rotate(45deg);
+    .cnt; .cnt; .bc(@mgrey); .w(2px); .h(@ms);
+  }
+  &:before {
+    .abs; .l(50%); .t(50%); transform:translate(-50%,-50%) rotate(-45deg);
+    .cnt; .bc(@mgrey); .w(2px); .h(@ms);
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+// FACILITY CHART (fcc)
+/////////////////////////////////////////////////////////////////////
+
+#facility-charts {.h(70%); .b; .r; .w;}
+#facility-chart {.wh; .ofy(scroll);}
+
+#main-chart {.h(95%); .va(top);}
+
+.facility-chart {
+  .hide; .mar(0 @m (@m * 2)); .w(calc(100% ~'-' (@m * 2)));
+  &.selected {.dsp(table);}
+}
+
+#facility-chart-labels {.mar(0 @m); .w(94%);}
+.facility-chart-label {.ta(center); .fs(2rem); .pad(0 @xs @xs); .lh(110%); .w(10.4%);}
+.facility-chart-labels {
+  td.facility-chart-label {
+    &:nth-child(1) {.w(17.5%);}
+    &:nth-child(2) {.w(20%);}
+  }
+}
+
+.overall-value, .facility-type, .service {
+  .h(11rem); .ta(center); .bd(7.5px solid @lgrey); .mnw(12rem); .fw(300);
+}
+
+.overall-value {.fw(400); .fs(@m); .c(white); .w(17.5%);}
+.facility-type {.fw(400); .fs(2.2rem); .pad(0 @s); .w(20%); .lh(120%);}
+
+#service-info {
+  .fxd; .l(50%); .z(2); .fs(1.7rem); ;
+  box-shadow: 4px 4px 4px @dtrans; .hide;
+}
+
+#service-info-text {
+  .w(30rem); .bc(white); .pad(@xs); .rel;
+  &:before {
+      .cnt; .wh(1.5rem); transform:translate(-50%,-50%) rotate(45deg);
+      .t(100%); .r(1rem); .bc(white); .abs;
+  }
+}

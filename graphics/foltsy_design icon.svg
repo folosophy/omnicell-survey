@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<circle id="XMLID_1_" fill="#89DCA2" cx="100" cy="100" r="100"/>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="100" cy="100" r="100"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_3_" cx="100" cy="100" r="100"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_4_)">
+			<circle fill="#89DCA2" cx="100.48" cy="100.422" r="38.078"/>
+			<path fill="#FFFFFF" d="M182.227,98.283l-1.928-2.438c-0.336-0.427-8.38-10.528-22.164-20.656
+				C139.687,61.635,119.587,54.469,100,54.469c-19.583,0-39.685,7.166-58.133,20.719c-13.78,10.125-21.829,20.228-22.165,20.655
+				l-1.93,2.44c-1.029,1.3-1.029,3.138,0,4.438l1.928,2.438c0.338,0.423,8.39,10.535,22.166,20.652
+				c18.448,13.557,38.55,20.72,58.134,20.72c19.586,0,39.686-7.163,58.135-20.72c13.789-10.127,21.828-20.229,22.16-20.649
+				l1.932-2.441C183.258,101.421,183.258,99.583,182.227,98.283z M100,135.888c-19.545,0-35.388-15.84-35.388-35.388
+				c0-19.544,15.842-35.389,35.388-35.389c19.55,0,35.387,15.845,35.387,35.389C135.387,120.048,119.549,135.888,100,135.888z"/>
+			<path fill="#4D4D4D" d="M100.493,83.184c9.517,0,17.225,7.716,17.225,17.229s-7.708,17.228-17.225,17.228
+				c-9.513,0-17.227-7.715-17.227-17.228S90.98,83.184,100.493,83.184z"/>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_5_" cx="100" cy="100" r="100"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  overflow="visible"/>
+		</clipPath>
+	</g>
+</g>
+</svg>

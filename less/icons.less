@@ -1,0 +1,25 @@
+@import "vars.less";
+
+/* Main Icons */
+
+.icon {
+  &.medium {.wh(2.5rem);}
+}
+
+/////////////////////////////////////////////////////////////////////
+// SVG (svg)
+/////////////////////////////////////////////////////////////////////
+
+svg.icon {
+  line,polyline,circle,path,ellipse,rect,polygon {.o(.35);}
+}
+
+svg {
+  &.thin {
+    .mw;
+    line,polyline,circle,path,ellipse,rect,polygon {.sw(4px);}
+  }
+  &.thick {
+    line,polyline,circle,path,ellipse,rect,polygon {.sw(6px);}
+  }
+}

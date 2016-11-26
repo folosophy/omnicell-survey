@@ -1,0 +1,1266 @@
+/* Theme Name: Survey */
+.fxdcenter {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/********************************************************************
+HTML (html)
+********************************************************************/
+html {
+  font-size: 10px;
+}
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 2rem;
+  overflow: hidden;
+  background-color: #F0F0F2;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+#mobile,
+#tablet,
+#desktop {
+  display: none;
+}
+div,
+section,
+button {
+  position: relative;
+}
+#wpadminbar {
+  display: none;
+}
+/********************************************************************
+STYLES (stl)
+********************************************************************/
+section.green {
+  background-color: #009C79;
+}
+.value-none {
+  background-color: #DADADA;
+}
+.value-one {
+  background-color: #EB8F73;
+}
+.value-two {
+  background-color: #F1B564;
+}
+.value-three {
+  background-color: #D0DD60;
+}
+.value-four {
+  background-color: #78BD6D;
+}
+.value-five {
+  background-color: #009C79;
+}
+/********************************************************************
+MAIN PAGE (mnp)
+********************************************************************/
+table.fullx {
+  width: 100%;
+}
+table.full {
+  width: 100%;
+  height: 100%;
+}
+#page {
+  width: 100%;
+  height: 100%;
+}
+#menu-container {
+  width: 50rem;
+  height: 100%;
+  background-color: #373737;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#facilities-section {
+  width: calc(100% - 50rem);
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 50rem;
+  top: 0;
+}
+#menu {
+  width: 100%;
+  height: 100%;
+}
+#menu-header {
+  width: 100%;
+  height: 7rem;
+  background-color: #2f2f2f;
+  line-height: 7rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#menu-header .data {
+  padding-bottom: 0;
+}
+.module-med {
+  padding: 3rem;
+}
+#nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #414141;
+  height: 7rem;
+}
+#nav h1,
+#nav h2,
+#nav h3,
+#nav h4 {
+  margin-bottom: 0;
+}
+#user-info {
+  font-weight: 300;
+  margin-right: 7rem;
+  color: black;
+}
+.module.lg {
+  padding: 7rem;
+}
+.legend {
+  height: 18%;
+}
+.legend-swatch {
+  width: 7rem;
+  height: 4rem;
+  margin-bottom: 1.5rem;
+}
+.legend-key {
+  padding: 0 2.5px;
+}
+.table-row {
+  border: solid #F0F0F2;
+  border-width: 0 0 10px;
+}
+div.pad {
+  padding: 0 3rem;
+}
+.medication-module {
+  visibility: hidden;
+}
+#page.medication #facilities-section {
+  width: 100%;
+  left: 0;
+}
+#page.medication #menu-container,
+#page.medication #facility-charts,
+#page.medication .facility-module {
+  display: none;
+}
+#page.medication .medication-module {
+  visibility: visible;
+}
+#chart-back {
+  background-color: #5CA9D2;
+  line-height: 7rem;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+#chart-back-arrow {
+  height: 2rem;
+  margin-right: 1rem;
+}
+#save {
+  background-color: #2f2f2f;
+  line-height: 7rem;
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+#save-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+#chart-back,
+#save {
+  padding: 0 3rem;
+}
+#chart-back h3,
+#save h3 {
+  color: white;
+  line-height: 7rem;
+  margin: 0;
+  display: inline-block;
+  font-weight: 300;
+}
+#medication-nav {
+  font-size: 0;
+  letter-spacing: 0;
+  display: flex;
+}
+#medication-charts {
+  height: 65%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  margin: 4rem 0;
+}
+#medication-headers {
+  height: 10%;
+  width: 100%;
+  background-color: transparent;
+  width: calc(100% - 8rem);
+  margin: 0 4rem;
+  position: fixed;
+  top: 25%;
+  left: 0;
+}
+.med-capabilities.data {
+  width: calc(55% - 50rem);
+  text-align: center;
+  padding: 1.5rem 2.5rem 1.5rem 4rem;
+  display: inline-flex;
+  align-items: center;
+}
+.med-capabilities.data h3 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 120%;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 0 4rem;
+}
+.med-capabilities.data h2 {
+  text-align: center;
+  width: 100%;
+}
+.med-savings {
+  width: 50rem;
+}
+.med-values {
+  width: 30%;
+}
+.comments {
+  width: 25%;
+  height: 100%;
+}
+.comment {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.75rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.med-labels-container {
+  vertical-align: bottom;
+}
+.med-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.med-labels h1,
+.med-labels h2,
+.med-labels h3,
+.med-labels h4 {
+  margin-bottom: 0;
+}
+.med-labels > div {
+  flex-grow: 1;
+}
+.med-stem {
+  height: 2rem;
+  width: 2px;
+  background-color: #414141;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.med-label {
+  position: absolute;
+  bottom: 1.5rem;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  left: 50%;
+}
+.cost-module {
+  text-align: center;
+}
+.data-row {
+  display: none;
+}
+.data-row.saved {
+  display: flex;
+}
+.data {
+  padding: 1.5rem;
+  display: inline-block;
+  margin: 10px 5px;
+}
+.reduction-types {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reduction-types h1,
+.reduction-types h2,
+.reduction-types h3,
+.reduction-types h4 {
+  margin-bottom: 0;
+}
+.med-value {
+  width: calc(100% - 5px);
+  height: 100%;
+  margin: 0 2.5px;
+}
+.data.med-values,
+.data.comments {
+  padding: 0;
+}
+#med-chart tbody td {
+  height: 100%;
+}
+#med-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 29%;
+  z-index: 1;
+  background-color: #F0F0F2;
+  display: flex;
+}
+#med-chart {
+  width: 100%;
+  height: 100%;
+}
+#med-chart-wrapper {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+#menu-items::-webkit-scrollbar,
+#facility-chart::-webkit-scrollbar,
+#medication-charts::-webkit-scrollbar,
+#med-chart-wrapper::-webkit-scrollbar {
+  width: 1.5rem;
+}
+#menu-items::-webkit-scrollbar-thumb,
+#facility-chart::-webkit-scrollbar-thumb,
+#medication-charts::-webkit-scrollbar-thumb,
+#med-chart-wrapper::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+}
+#menu-items::-webkit-scrollbar-thumb:hover,
+#facility-chart::-webkit-scrollbar-thumb:hover,
+#medication-charts::-webkit-scrollbar-thumb:hover,
+#med-chart-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #c1c1c1;
+}
+#menu-items::-webkit-scrollbar-track,
+#facility-chart::-webkit-scrollbar-track,
+#medication-charts::-webkit-scrollbar-track,
+#med-chart-wrapper::-webkit-scrollbar-track {
+  background-color: #5a5a5a;
+}
+#menu-items {
+  height: calc(100% - 60rem);
+  overflow-y: scroll;
+}
+.menu-item {
+  padding: 3rem;
+  opacity: 0.35;
+  cursor: pointer;
+}
+.menu-item:hover {
+  opacity: 0.5;
+}
+.menu-item.selected {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-item.selected .menu-item-save {
+  background-color: #5CA9D2;
+  color: white;
+}
+.menu-item.saved .menu-item-save {
+  color: transparent;
+  background-color: transparent;
+}
+.menu-item.saved .menu-item-save:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  content: '';
+  background-color: white;
+  width: 2px;
+  height: 3rem;
+}
+.menu-item.saved .menu-item-save:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  content: '';
+  background-color: white;
+  width: 2px;
+  height: 3rem;
+}
+.menu-item-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.menu-item-save {
+  background-color: transparent;
+  color: transparent;
+  line-height: 0;
+  border-radius: 3px;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+#view-saved {
+  height: 7rem;
+  background-color: #5CA9D2;
+  padding: 0 3rem;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  cursor: default;
+}
+#view-saved h3 {
+  margin-bottom: 0;
+  line-height: 7rem;
+}
+#view-saved.counting {
+  opacity: 1;
+  cursor: pointer;
+}
+#menu-container .cost-reduction {
+  display: none;
+}
+#menu-container .cost-reduction.selected {
+  display: block;
+}
+#menu-reductions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu-reductions h1,
+#menu-reductions h2,
+#menu-reductions h3,
+#menu-reductions h4 {
+  margin-bottom: 0;
+}
+#menu-reductions h4 {
+  padding-bottom: 1.5rem;
+}
+#menu-reduction {
+  width: 100%;
+  background-color: #404040;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 33%;
+}
+.cost-icon {
+  margin-bottom: 1.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+.bar-graph {
+  font-size: 0;
+}
+.bar-graph > div:first-child > div:nth-child(4):after {
+  content: 'MAN';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.bar-graph > div:nth-child(2) > div:nth-child(4):after {
+  content: 'AUTO';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.graph {
+  width: 5.5rem;
+  height: 14rem;
+  background-color: rgba(255, 255, 255, 0.06);
+  display: inline-block;
+}
+.graph-val {
+  width: 100%;
+  height: 25%;
+  background-color: #5CA9D2;
+  border: #414141 2px solid;
+  position: relative;
+}
+.graph-val.none {
+  background-color: transparent;
+}
+#med-chart .graph-val {
+  background-color: #5CA9D2;
+  border: 2px solid #dadada;
+}
+#med-chart .graph-val.none {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.remove-icon {
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.remove-icon:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  content: '';
+  background-color: #414141;
+  width: 2px;
+  height: 3rem;
+}
+.remove-icon:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  content: '';
+  background-color: #414141;
+  width: 2px;
+  height: 3rem;
+}
+#facility-charts {
+  height: 70%;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+#facility-chart {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+#main-chart {
+  height: 95%;
+  vertical-align: top;
+}
+.facility-chart {
+  display: none;
+  margin: 0 4rem 8rem;
+  width: calc(100% - 8rem);
+}
+.facility-chart.selected {
+  display: table;
+}
+#facility-chart-labels {
+  margin: 0 4rem;
+  width: 94%;
+}
+.facility-chart-label {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 1.5rem 1.5rem;
+  line-height: 110%;
+  width: 10.4%;
+}
+.facility-chart-labels td.facility-chart-label:nth-child(1) {
+  width: 17.5%;
+}
+.facility-chart-labels td.facility-chart-label:nth-child(2) {
+  width: 20%;
+}
+.overall-value,
+.facility-type,
+.service {
+  height: 11rem;
+  text-align: center;
+  border: 7.5px solid #F0F0F2;
+  min-width: 12rem;
+  font-weight: 300;
+}
+.overall-value {
+  font-weight: 400;
+  font-size: 4rem;
+  color: white;
+  width: 17.5%;
+}
+.facility-type {
+  font-weight: 400;
+  font-size: 2.2rem;
+  padding: 0 2.5rem;
+  width: 20%;
+  line-height: 120%;
+}
+#service-info {
+  position: fixed;
+  left: 50%;
+  z-index: 2;
+  font-size: 1.7rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  display: none;
+}
+#service-info-text {
+  width: 30rem;
+  background-color: white;
+  padding: 1.5rem;
+  position: relative;
+}
+#service-info-text:before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 100%;
+  right: 1rem;
+  background-color: white;
+  position: absolute;
+}
+/********************************************************************
+FONTS (fnt)
+********************************************************************/
+body {
+  font-family: 'proxima-nova', sans-serif;
+  color: #373737;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+p a {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: inherit;
+}
+p.sm {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0 0 1.5em;
+  color: #414141;
+}
+p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.7em;
+  margin: 0 0 1.75em;
+  color: #373737;
+}
+h1 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  word-spacing: 0.01em;
+}
+h2 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 2.25rem;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 2.25rem;
+}
+h4 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 0 2em 0;
+  color: #666;
+  line-height: 1.5em;
+  letter-spacing: 0.07em;
+}
+ol {
+  font-size: 2.5rem;
+  line-height: 1.5em;
+}
+ol > li {
+  margin-bottom: 2em;
+}
+a {
+  color: inherit;
+}
+p a {
+  color: #666;
+  border-bottom: 3px solid;
+  font-weight: bold;
+}
+.halves p,
+.thirds p,
+.fourths p,
+.halves button,
+.thirds button,
+.fourths button {
+  font-size: 1.75rem;
+}
+button {
+  font-size: 2.5rem;
+}
+#logo {
+  font-family: 'proxima-nova', sans-serif;
+}
+.text-accent {
+  color: inherit;
+}
+h2.case {
+  font-size: 7rem;
+  color: white;
+  font-weight: 700;
+}
+a.white,
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+span.white,
+p.white {
+  color: white;
+}
+a.light,
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+span.light,
+p.light {
+  opacity: 0.6;
+  color: white;
+}
+.big-quote {
+  font-size: 3rem;
+}
+/********************************************************************
+FORMS (frm)
+********************************************************************/
+/********************************************************************
+BASIC FORM (frm)
+********************************************************************/
+.field-group {
+  margin-bottom: 4rem;
+}
+.field-group.center .field {
+  margin-left: auto;
+  margin-right: auto;
+}
+.field {
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 50rem;
+}
+input select,
+.drop-down .menu {
+  padding: 1.5rem;
+  background-color: transparent;
+  font-weight: 300;
+  width: 100%;
+  border: rgba(0, 0, 0, 0.35) solid;
+  border-width: 0 0 2px 0;
+}
+textarea {
+  background-color: white;
+  font-weight: 300;
+  border-radius: 5px;
+}
+#spm {
+  display: none !important;
+}
+button {
+  overflow: hidden;
+}
+.noscrape {
+  opacity: 0;
+  font-size: 0;
+  position: absolute;
+}
+input:not([type='checkbox']),
+textarea {
+  padding: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+/********************************************************************
+BUTTONS (btn)
+********************************************************************/
+a.button,
+button {
+  padding: 2rem;
+  border: none;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #5CA9D2;
+  color: white;
+  line-height: 100%;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2.75rem;
+}
+a.button.disabled,
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/********************************************************************
+SIGN UP / SIGN IN (sgn)
+********************************************************************/
+.popup {
+  min-width: 45rem;
+  max-width: 100%;
+  padding: 4rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#gateway {
+  background-color: white;
+}
+form.light input,
+form.light textarea {
+  background-color: white;
+}
+form#new-user {
+  width: 100rem;
+}
+#user-credentials {
+  display: none;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+/********************************************************************
+NORMALIZE (nrm)
+********************************************************************/
+input:focus {
+  outline-width: 0 !important;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.25);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: pink;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: pink;
+}
+/********************************************************************
+ICONS (icn)
+********************************************************************/
+/* Main Icons */
+.icon.medium {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+svg.icon line,
+svg.icon polyline,
+svg.icon circle,
+svg.icon path,
+svg.icon ellipse,
+svg.icon rect,
+svg.icon polygon {
+  opacity: 0.35;
+}
+svg.thin {
+  max-width: 100%;
+}
+svg.thin line,
+svg.thin polyline,
+svg.thin circle,
+svg.thin path,
+svg.thin ellipse,
+svg.thin rect,
+svg.thin polygon {
+  stroke-width: 4px;
+}
+svg.thick line,
+svg.thick polyline,
+svg.thick circle,
+svg.thick path,
+svg.thick ellipse,
+svg.thick rect,
+svg.thick polygon {
+  stroke-width: 6px;
+}
+/********************************************************************
+IMAGES (imgs)
+********************************************************************/
+.thumb.medium {
+  width: 15rem;
+  height: 15rem;
+}
+.fit {
+  width: 100%;
+}
+/********************************************************************
+ARROWS (arw)
+********************************************************************/
+.arrow {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  position: absolute;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  top: 30%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: 50%;
+}
+.arrow.hov {
+  animation: arrow-hover 1.5s ease-in-out infinite;
+}
+/********************************************************************
+ANIMATIONS (anm)
+********************************************************************/
+.reveal {
+  opacity: 0;
+}
+.slide-in {
+  margin-top: 0;
+  opacity: 1;
+}
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate3d(0, -1.5rem, 0);
+  }
+  50% {
+    transform: translate3d(0, 1.5rem, 0);
+  }
+  100% {
+    transform: translate3d(0, -1.5rem, 0);
+  }
+}
+.shake {
+  animation: shake .5s linear;
+}
+@keyframes shake {
+  0% {
+    transform: translate3d(-2rem, 0, 0);
+  }
+  20% {
+    transform: translate3d(1.5rem, 0, 0);
+  }
+  40% {
+    transform: translate3d(-1.1rem, 0, 0);
+  }
+  60% {
+    transform: translate3d(0.75rem, 0, 0);
+  }
+  80% {
+    transform: translate3d(-0.25rem, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes arrow-hover {
+  0% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  50% {
+    transform: translate(-50%, -60%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+/* Gears */
+.gears {
+  background-color: transparent;
+  height: 16rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  max-width: 125%;
+}
+.gears img {
+  margin: 0 1rem;
+}
+.gears img:nth-child(5) {
+  height: 200%;
+  left: 100%;
+  animation: gear-spin 10s linear infinite;
+}
+.gears img:nth-child(4) {
+  height: 140%;
+  left: 75%;
+  animation: gear-spin 10s linear reverse infinite;
+}
+.gears img:nth-child(3) {
+  height: 90%;
+  left: 50%;
+  animation: gear-spin 10s linear infinite;
+}
+.gears img:nth-child(2) {
+  height: 60%;
+  left: 25%;
+  animation: gear-spin 10s linear reverse infinite;
+}
+.gears img:nth-child(1) {
+  height: 40%;
+  left: 0%;
+  animation: gear-spin 10s linear forwards infinite;
+}
+@keyframes gear-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/********************************************************************
+DIVIDERS (dvd)
+********************************************************************/
+.pad.l {
+  width: 100%;
+  height: 12rem;
+  background-color: transparent;
+}
+/********************************************************************
+LAYOUT (lyt)
+********************************************************************/
+.last {
+  margin-bottom: 0;
+}
+.ib {
+  display: inline-block;
+}
+.center {
+  text-align: center;
+}
+.boxed {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10rem;
+}
+.dist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dist h1,
+.dist h2,
+.dist h3,
+.dist h4 {
+  margin-bottom: 0;
+}
+.dist-top {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+.ib-cont > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.aic {
+  align-items: center;
+}
+.square {
+  width: 100%;
+  padding-top: 100%;
+  background-color: transparent;
+}
+.ldist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ldist p,
+.ldist h1,
+.ldist h2,
+.ldist h3,
+.ldist h4 {
+  margin-bottom: 0;
+  margin-left: 2.5rem;
+}
+.grid {
+  font-size: 0;
+  width: calc(100% + 4rem);
+  letter-spacing: 0;
+  margin: -2rem;
+}
+.half {
+  width: calc(50% - 4rem);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2rem;
+}
+.third {
+  width: calc(33.3333% - 4rem);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2rem;
+}
+.two-third {
+  width: calc(66.6666% - 4rem);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2rem;
+}
+.fourth {
+  width: calc(25% - 4rem);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2rem;
+}
+.three-fourths > .large {
+  width: 75%;
+}
+td.top,
+tr.top {
+  vertical-align: top;
+}
+.dvd {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 3rem;
+}
+.dvd.dot {
+  height: 1px;
+  width: 100%;
+  background-color: #F0F0F2;
+  border-bottom: 2px dotted #F0F0F2;
+  background-color: transparent;
+  margin-bottom: 4rem;
+}
+.dvd.h {
+  background-color: #F0F0F2;
+  margin: 0 auto 4rem;
+  width: 5px;
+  height: 5px;
+}
+.spacer {
+  width: 100%;
+  height: 1px;
+}
+.spacer.m {
+  margin-bottom: 4rem;
+}
+.spacer.s {
+  margin-bottom: 3rem;
+}
+section .wrap {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10rem;
+}
+section.pad {
+  padding: 4rem;
+}
+/********************************************************************
+RESPONSIVE (rsp)
+********************************************************************/
+/********************************************************************
+DESKTOP (dt)
+********************************************************************/
+@media screen and (min-width: 1501px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+/********************************************************************
+Debugging (dbg)
+********************************************************************/
+#dev {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  z-index: 99999;
+  padding: 4rem;
+  display: none;
+}
